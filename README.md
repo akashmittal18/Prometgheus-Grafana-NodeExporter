@@ -151,3 +151,14 @@ sudo service prometheus restart
 sudo service prometheus status
 ```
 
+PS- To monitor a different server, you simply need to set up node exporter as a service on that server and modify the prometheus.yaml file on the machine where Prometheus is installed. The alterations you'll need to make are:
+```yaml
+
+ - job_name: 'Name of the Job'
+    static_configs:
+    - targets: ['ip of your another server whre new node exporter is running:9100']
+```  
+``` text
+This configuration can be added to the prometheus.yaml file on the machine where Prometheus is installed to enable monitoring of the new server.
+
+``` 
