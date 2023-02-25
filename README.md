@@ -1,4 +1,4 @@
-# Prometgheus-Grafana-NodeExporter
+# Prometheus-Grafana-NodeExporter
 
 ```text
 Note- Prometheus will run on port [9090]
