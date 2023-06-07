@@ -162,3 +162,7 @@ PS- To monitor a different server, you simply need to set up node exporter as a 
 This configuration can be added to the prometheus.yaml file on the machine where Prometheus is installed to enable monitoring of the new server.
 
 ``` 
+## Start Grafana Server
+```cmd
+./bin/grafana-server
+```
